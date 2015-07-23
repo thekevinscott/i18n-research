@@ -1,0 +1,22 @@
+{
+  "name": "i18n",
+  "version": "1.0.0",
+  "description": "This document is a compilation of internationalization research I've done with the goal to localize a (mostly) client-side Javascript app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scottlabs/i18n-research.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scottlabs/i18n-research/issues"
+  },
+  "homepage": "https://github.com/scottlabs/i18n-research",
+  "dependencies": {
+    "express": "^4.13.1"
+  }
+}
