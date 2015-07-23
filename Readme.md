@@ -222,7 +222,7 @@ We should provide an easy way to see what translations are missing across all tr
 I evaluated a number of i18n libraries. Here are my thoughts on each.
 
 ###[FormatJS](http://formatjs.io/)
-*License: [Yahoo BSD](https://github.com/yahoo/formatjs-site/blob/master/LICENSE.md) | [Code Sample](https://github.com/scottlabs/i18n-research/blob/master/formatjs/script.js) | [Live Example]()*
+*License: [Yahoo BSD](https://github.com/yahoo/formatjs-site/blob/master/LICENSE.md) | [Code Sample](https://github.com/scottlabs/i18n-research/blob/master/formatjs/script.js) | [Live Example](https://i18n-javascript-research.herokuapp.com/formatjs/)*
 
 FormatJS is a collection of i18n tools, including integrations for templating engines such as Handlebars.
 
@@ -274,7 +274,7 @@ FormatJS also handles plurals according to the ICU MessageFormat standard:
 Additionally, the set of APIs appears to be modular, so we can pick and choose what we want to include.
 
 ### [i18next](http://i18next.com/)
-*License: [MIT](https://github.com/i18next/i18next/blob/master/license) | [Code Sample](https://github.com/scottlabs/i18n-research/blob/master/i18next/script.js) | [Live Example]()*
+*License: [MIT](https://github.com/i18next/i18next/blob/master/license) | [Code Sample](https://github.com/scottlabs/i18n-research/blob/master/i18next/script.js) | [Live Example](https://i18n-javascript-research.herokuapp.com/i18next/)*
 
 i18next handles string translations. It doesn't seem to work with dates or numbers. Supports the browser and Node.
 
@@ -350,7 +350,7 @@ It also handles plurals, along with the ability to define your own plural rules.
 A nicely built library, very customizable, with dynamic requiring of translation files.
 
 ### [l10ns](http://l10ns.org/)
-*License: [MIT](https://github.com/tinganho/l10ns/blob/master/LICENSE-MIT) | [Code Sample](https://github.com/scottlabs/i18n-research/tree/master/l10ns) | [Live Example]()**
+*License: [MIT](https://github.com/tinganho/l10ns/blob/master/LICENSE-MIT) | [Code Sample](https://github.com/scottlabs/i18n-research/tree/master/l10ns)*
 
 L10ns is [spoken of highly](http://alistapart.com/article/pluralization-for-javascript), and purports to offer a number of nice features including robust plurals handling.
 
@@ -375,7 +375,7 @@ Overall, the neat features include:
 However, the library requires some very non-standard translation file formats, and would require additional compilation steps in our build process.
 
 ### [Polyglot](http://airbnb.io/polyglot.js/)
-*License: [Custom](https://github.com/airbnb/polyglot.js/blob/master/LICENSE) | [Code Sample](https://github.com/scottlabs/i18n-research/blob/master/polyglot/script.js) | [Live Example]()**
+*License: [Custom](https://github.com/airbnb/polyglot.js/blob/master/LICENSE) | [Code Sample](https://github.com/scottlabs/i18n-research/blob/master/polyglot/script.js) | [Live Example](https://i18n-javascript-research.herokuapp.com/polyglot/)*
 
 Polyglot is an i18n library built and used by Airbnb.
 
@@ -404,7 +404,7 @@ Some drawbacks:
 #### Then there's a number of tools that offer a subset of i18n support.
 
 ### [MessageFormat](https://github.com/SlexAxton/messageformat.js)
-*License: [Similar to MIT](https://github.com/SlexAxton/messageformat.js/blob/master/LICENSE) | [Code Sample](https://github.com/scottlabs/i18n-research/blob/master/messageformat/script.js) | [Live Example]()*
+*License: [Similar to MIT](https://github.com/SlexAxton/messageformat.js/blob/master/LICENSE) | [Code Sample](https://github.com/scottlabs/i18n-research/blob/master/messageformat/script.js) | [Live Example](https://i18n-javascript-research.herokuapp.com/messageformat)*
 
 This is an implementation of the ICU MessageFormat in Javascript.
 
@@ -440,7 +440,7 @@ This library is focused solely on handling pluralization and generalization.
 This looks like a solid library.
 
 ### [Sprintf](https://github.com/alexei/sprintf.js)
-*License: [Similar to MIT](https://github.com/alexei/sprintf.js/blob/master/LICENSE) | [Code Sample](https://github.com/scottlabs/i18n-research/blob/master/sprintf/script.js) | [Live Example]()**
+*License: [Similar to MIT](https://github.com/alexei/sprintf.js/blob/master/LICENSE) | [Code Sample](https://github.com/scottlabs/i18n-research/blob/master/sprintf/script.js) | [Live Example](https://i18n-javascript-research.herokuapp.com/sprintf/)*
 
 If we want to roll our own translation library, this is a solid implementation of sprintf.
 
@@ -460,7 +460,7 @@ If we want to roll our own translation library, this is a solid implementation o
 ## Date / Times
 
 ### Intl
-*Polyfill License: [MIT](https://github.com/andyearnshaw/Intl.js/blob/master/LICENSE.txt) | [Code Sample](https://github.com/scottlabs/i18n-research/blob/master/intl/script.js) | [Live Example]()*
+*Polyfill License: [MIT](https://github.com/andyearnshaw/Intl.js/blob/master/LICENSE.txt) | [Code Sample](https://github.com/scottlabs/i18n-research/blob/master/intl/script.js) | [Live Example](https://i18n-javascript-research.herokuapp.com/intl/)*
 
 [Intl](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl) is a built-in API for handling a subset of localization needs, including number and date formatting and string sorting. Two other great articles about Intl are [here](http://norbertlindenberg.com/2012/12/ecmascript-internationalization-api/index.html) and [here](https://hacks.mozilla.org/2014/12/introducing-the-javascript-internationalization-api/)
 
@@ -486,7 +486,7 @@ If we want to roll our own translation library, this is a solid implementation o
 Intl is currently supported on Chrome, Firefox, and IE11+. It is unsupported on Safari, but a [polyfill exists](https://github.com/andyearnshaw/Intl.js).
 
 ### Moment.js
-*License: [MIT](https://github.com/nrenner/achavi/blob/master/licenses/momentjs-LICENSE) | [Code Sample](https://github.com/scottlabs/i18n-research/blob/master/momentjs/script.js) | [Live Example]()*
+*License: [MIT](https://github.com/nrenner/achavi/blob/master/licenses/momentjs-LICENSE) | [Code Sample](https://github.com/scottlabs/i18n-research/blob/master/momentjs/script.js) | [Live Example](https://i18n-javascript-research.herokuapp.com/momentjs/)*
 
 Moment.js has [i18n support](http://momentjs.com/docs/#/i18n/), including date and time localization.
 
@@ -499,7 +499,7 @@ Moment.js has [i18n support](http://momentjs.com/docs/#/i18n/), including date a
 
 
 ## Punctuation
-*[Code Sample](https://github.com/scottlabs/i18n-research/blob/master/punctuation/styles.less) | [Live Example]()*
+*[Code Sample](https://github.com/scottlabs/i18n-research/blob/master/punctuation/styles.less) | [Live Example](https://i18n-javascript-research.herokuapp.com/punctuation)*
 
 A nifty solution for [handling punctuation in CSS](http://www.smashingmagazine.com/2014/06/23/css-driven-internationalization-in-javascript/) is proposed by Maksim Chemerisuk. Using the `lang` element on the `<html>` element, in our LESS files we could do something like:
 
