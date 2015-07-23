@@ -1,0 +1,10 @@
+{
+    "base_key": "foo",
+    "app": {
+        "hello": "Hello"
+    },
+    "interpolation_ordered": "The first 4 letters of the english alphabet are: %s, %s, %s and %s",
+    "interpolation_named": "Hello __name__",
+    "child": "__count__  child",
+    "child_plural": "__count__  children" 
+}

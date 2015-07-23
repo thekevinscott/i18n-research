@@ -1,0 +1,22 @@
+<html><body>
+<script id="number-template" type="text/x-handlebars-template">
+<p>{{formatNumber price style="currency" currency="USD"}}</p>
+</script>
+<script id="photos-template" type="text/x-handlebars-template">
+    {{formatMessage (intlGet "messages.photos")
+        name=name
+        numPhotos=numPhotos
+        takenDate=takenDate}}
+        </script>
+<script src="node_modules/handlebars/dist/handlebars.js"></script>
+<script src="node_modules/handlebars-intl/dist/handlebars-intl.js"></script>
+<script src="script.js"></script>
+
+English:
+<p id="english_number"></p>
+French:
+<p id="french_number"></p>
+
+<p id="photos"></p>
+
+</body></html>

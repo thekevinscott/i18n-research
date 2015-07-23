@@ -1,0 +1,24 @@
+[
+  {
+    "files": [
+      "test.js"
+    ],
+    "id": "rLj6XxEat6",
+    "key": "SIGN_UP->FIRSTNAME",
+    "new": true,
+    "timestamp": "2015-07-22T20:19:11.114Z",
+    "value": "Firstname",
+    "variables": []
+  },
+  {
+    "files": [
+      "test.js"
+    ],
+    "id": "kzo6ELMrFb",
+    "key": "SIGN_UP->LASTNAME",
+    "new": true,
+    "timestamp": "2015-07-22T20:19:11.114Z",
+    "value": "",
+    "variables": []
+  }
+]

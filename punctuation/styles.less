@@ -1,0 +1,19 @@
+html {
+    &[lang=en] {
+        #string {
+            &:before, &:after {
+                content: '"';
+            }
+        }
+    }
+    &[lang=fr] {
+        #string {
+            &:before {
+                content: '«';
+            }
+            &:after {
+                content: '»';
+            }
+        }
+    }
+}

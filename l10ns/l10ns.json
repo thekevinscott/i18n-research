@@ -1,0 +1,28 @@
+{
+  "defaultProject": "l10ns",
+  "projects": {
+    "l10ns": {
+      "timezones": [
+        "America/Los_Angeles"
+      ],
+      "currencies": [
+        "USD"
+      ],
+      "interface": {
+        "autoOpen": true,
+        "port": 3001
+      },
+      "languages": {
+        "en-US": "English",
+        "es": "Spanish"
+      },
+      "defaultLanguage": "en-US",
+      "programmingLanguage": "javascript",
+      "store": "localizations/",
+      "output": "localizations/output",
+      "source": [
+          "test.js"
+      ]
+    }
+  }
+}
