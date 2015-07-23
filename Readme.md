@@ -486,7 +486,7 @@ If we want to roll our own translation library, this is a solid implementation o
 Intl is currently supported on Chrome, Firefox, and IE11+. It is unsupported on Safari, but a [polyfill exists](https://github.com/andyearnshaw/Intl.js).
 
 ### Moment.js
-*License: [MIT](https://github.com/nrenner/achavi/blob/master/licenses/momentjs-LICENSE) | [Code Sample]() | [Live Example]()*
+*License: [MIT](https://github.com/nrenner/achavi/blob/master/licenses/momentjs-LICENSE) | [Code Sample](https://github.com/scottlabs/i18n-research/blob/master/momentjs/script.js) | [Live Example]()*
 
 Moment.js has [i18n support](http://momentjs.com/docs/#/i18n/), including date and time localization.
 
