@@ -370,7 +370,7 @@ Unfortunately, the getting started documentation is missing steps, and the gener
 Overall, the neat features include:
 
 * Automatic source code traversal to find translation strings and automatically generating the translation files via running `> l10ns compile`
-* An [online web editor]() for translators to use to input translations
+* An [online web editor](https://raw.githubusercontent.com/scottlabs/i18n-research/master/l10ns/l10ns%20web%20interface.png) for translators to use to input translations
 
 However, the library requires some very non-standard translation file formats, and would require additional compilation steps in our build process.
 
