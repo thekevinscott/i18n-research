@@ -41,9 +41,11 @@ When translating strings, there's no consensus on [how to specify keys](https://
 ### English Strings
 Using a string as a key might look like this:
 
+
 	// returns "Welcome" in English,
 	// and "Willkommen" in German
 	_("Welcome")
+
 	
 Which would return the given string in English, and the translation in another language.
 
@@ -55,13 +57,14 @@ This is the format that both [`gettext`](https://www.gnu.org/software/gettext/) 
 
 However, there are drawbacks:
 
-* Using English as the default can lead to conflicting keys in other languages. For instance, an English word "Email" might require two different texts in French, ["E-Mail" or "Envoyer un e-mail".](https://stackoverflow.com/questions/10654056/best-practice-for-key-values-in-translation-files).
+* Using English as the default can lead to conflicting keys in other languages. For instance, an English word "Email" might require two different texts in French, ["E-Mail" or "Envoyer un e-mail"](https://stackoverflow.com/questions/10654056/best-practice-for-key-values-in-translation-files).
 * If an English translation changes, every translation file's keys needs to be updated (though, presumbly, if an English translation changes, every other language will have to change as well).
 * For longer texts, specifying English strings keys could become verbose, particularly for paragraph-length text.
 	
 ### Descriptive keys
 
 Using descriptive keys for each translation is another oft-used solution that would look like this:
+
 
 	// returns "Welcome" in English,
 	// and "Willkommen" in German
@@ -100,7 +103,7 @@ Most libraries accept arguments in order or as named parameters which allows for
 	// Passing arguments in order
 	_('The first letters in the alphabet: %s %s %s', 'a', 'b', 'c')
 	
-	// Passing names arguments
+	// Passing named arguments
 	_('Welcome to %(version), %(user_name)', { version: 'Awesome Software', user_name: 'admin' })
 
 ## Plurals
@@ -125,14 +128,14 @@ To solve this, [ICU's **MessageFormat**](http://userguide.icu-project.org/format
 
 A message with plurals might look like this:
 
-	'There {scans, plural, one{is # scan} other{are # scans}}';
+	'There {files, plural, one{is # file} other{are # files}}';
 
 The message above shows plurals inlined in the message. Another strategy is to define each plural message separately:
 
 	{
-		SCAN_MESSAGE: {
-			one: "There is # scan",
-			other: "There are # scans"
+		FILE_MESSAGE: {
+			one: "There is # file",
+			other: "There are # files"
 		}
 	}
 
@@ -151,16 +154,14 @@ If we decide to split up translation files by application section, languages wou
 
 	- de/
 	  - constants.json
-	  - groups.json
-	  - scans.json
+	  - files.json
+	  - users.json
 	- en-US/
 	  - constants.json
-	  - groups.json
-	  - scans.json
+	  - files.json
+	  - users.json
 
 This would be useful if we wanted to abstract out constants for each set of translations in order to share common words or phrases.
-
-Presumably, the backend will require access to the translation files; for instance, returning messages from the API or generating reports for download. Placing these files appropriately should take this into consideration.
 
 ## Translation formats
 
@@ -462,7 +463,7 @@ If we want to roll our own translation library, this is a solid implementation o
 ### Intl
 *Polyfill License: [MIT](https://github.com/andyearnshaw/Intl.js/blob/master/LICENSE.txt) | [Code Sample](https://github.com/scottlabs/i18n-research/blob/master/intl/script.js) | [Live Example](https://i18n-javascript-research.herokuapp.com/intl/)*
 
-[Intl](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl) is a built-in API for handling a subset of localization needs, including number and date formatting and string sorting. Two other great articles about Intl are [here](http://norbertlindenberg.com/2012/12/ecmascript-internationalization-api/index.html) and [here](https://hacks.mozilla.org/2014/12/introducing-the-javascript-internationalization-api/)
+[Intl](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl) is a built-in API for handling a subset of localization needs, including number and date formatting and string sorting. Two other great articles about Intl are [here](http://norbertlindenberg.com/2012/12/ecmascript-internationalization-api/index.html) and [here](https://hacks.mozilla.org/2014/12/introducing-the-javascript-internationalization-api/).
 
 	// Numbers
 	var nf = new Intl.NumberFormat('en');
